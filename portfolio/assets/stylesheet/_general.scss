@@ -45,7 +45,7 @@ span {
 }
 
 p {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	color: $primary-clr;
 }
 
@@ -87,9 +87,9 @@ img {
 	height: 100%;
 }
 
-input, textarea, button {
+input, textarea, button, label {
 	display: block;
-	margin: 2rem 0;
+	margin: 1rem 0;
 	border: none;
 	outline: 0;
 	color:$primary-clr; 

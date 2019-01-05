@@ -1,5 +1,6 @@
 @import "base";
 @import "general";
+@import "header";
 
 // ===================================================
 								// hero section
@@ -13,33 +14,33 @@
 	text-align: center;
 }
 
-.primary-header {
-	display: grid;
-	width: 90%;
-	position: fixed;
-	bottom: 0;
-	left: 5%;
-	background-color: rgba(255, 255, 255, 0);
+// .primary-header {
+// 	display: grid;
+// 	width: 90%;
+// 	position: fixed;
+// 	bottom: 0;
+// 	left: 5%;
+// 	background-color: rgba(255, 255, 255, 0);
 
-	ul {
-		display: flex;
-		justify-content: space-around;
-		// padding: 2rem;
-		grid-template-rows: repeat(7, 1fr);
-	}
-	ul li a {
-		display: flex;
-		text-transform: capitalize;
-		padding: 3rem;
-		font-size: 3rem;
-		font-family: 'Yellowtail', cursive;
-		color: #000;
-	}
+// 	ul {
+// 		display: flex;
+// 		justify-content: space-around;
+// 		// padding: 2rem;
+// 		grid-template-rows: repeat(7, 1fr);
+// 	}
+// 	ul li a {
+// 		display: flex;
+// 		text-transform: capitalize;
+// 		padding: 3rem;
+// 		font-size: 3rem;
+// 		font-family: 'Yellowtail', cursive;
+// 		color: #000;
+// 	}
 
-	ul li a:hover {
-		color: #fff;
-	}
-}
+// 	ul li a:hover {
+// 		color: #fff;
+// 	}
+// }
 
 .hero-content-box {
 	position: absolute;
@@ -60,14 +61,6 @@
 	}
 	
 }
-
-// .hero-content-box:hover {
-// 	transition: rotateX(0deg);
-// 	// transform:rotateY(0deg);
-// 	background-color: red;
-// 	transition-duration: 2sec;
-// 	transition-timing-function: ease-in-out;
-// }
 
 
 // ===================================================
@@ -128,7 +121,8 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 	display: grid;
 	height: 100vh;
 	width: 100%;
-	background: url("../../assets/media/markus-spiske-1269203-unsplash.jpg") center no-repeat ;
+	background: url("../../assets/media/keyboard.jpg") center no-repeat ;
+	// background-image: -webkit-linear-gradient(to right, rgba(255,255,255,.1),rgba(255,255,255,.1));
 	background-size: cover;
 
 	.skill-content {
@@ -137,8 +131,28 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 		height: auto;
 		align-items: center;
 		margin: 0 50px;
+		.skill-details {
+			display: grid;
+			align-self: center;
+			font-family: 'Yellowtail', cursive;
+			p, h1 {
+				color: rgb(242,228,255);
+				font-weight: 400;
+				word-spacing: 0.6rem;
+				letter-spacing: 0.2rem;
+			}
+			p {
+				font-size: 3rem;
+			}
+		}
 		ul {
 			perspective: 1000px;
+		}
+
+		ul li {
+			h3 {
+				text-transform: uppercase;
+			}
 		}
 		ul li {
 			display: grid;
@@ -162,7 +176,7 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 		}
 		ul li:nth-child(1) {
 			background-color: #bfe8fc;
-			top: -260px;
+			top: -300px;
 			z-index: 2;
 		}
 		ul li:nth-child(2) {
@@ -172,7 +186,7 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 		}
 		ul li:nth-child(3) {
 			background-color: rgb(242,228,255);
-			top: 10px;
+			top: 50px;
 		}
 		ul li:hover {
 			transform: rotateY(-22deg) rotateX(7deg);
@@ -196,4 +210,65 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 			}
 		}
 	}
+}
+
+
+// ===================================================
+								// contact page
+// ===================================================
+.form-sec {
+	background: #111;
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	display: grid;
+	background-color: rgba(0,0,0,.8);
+	width: 50vw;
+	padding: 4rem;
+	border-radius: 10px;
+	justify-content: center;
+	input, textarea {
+		font-size: 2rem;
+		padding: 0.7rem 1rem;
+		color: #f3f3f3;
+		border: 1px solid #fff;
+		background-color: transparent;
+		border-radius: 2px;
+	}
+	label {
+		text-transform: uppercase;
+		font-size: 1.5rem;
+	}
+	legend {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 3rem;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.top-input-row {
+	display: flex;
+	justify-content: space-between;
+}
+.msg-container {
+	width: 100%;
+	margin: 3rem 0;
+}
+
+.btn {
+	background-color: #fff;
+	color: #333;
+	text-transform: uppercase;
+	padding: 0.7rem 1.5rem;
+	border-radius: 3px;
+	font-weight: bold;
 }
