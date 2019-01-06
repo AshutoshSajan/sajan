@@ -116,7 +116,14 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 // ===================================================
  
 
-
+.skill-sec-hdr {
+	ul li a {
+		color: cyan;
+	}
+	ul li a:hover {
+		color: white;
+	}
+}
 .skill-sec {
 	display: grid;
 	height: 100vh;
@@ -216,6 +223,18 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 // ===================================================
 								// contact page
 // ===================================================
+
+
+
+.contact-sec-hdr {
+	ul li a {
+		color: tomato;
+	}
+	ul li a:hover {
+		color: white;
+	}
+}
+
 .form-sec {
 	background: #111;
 	display: grid;
@@ -227,10 +246,10 @@ clip-path: polygon(62% 73%, 100% 2%, 100% 100%, 2% 100%);
 
 form {
 	display: grid;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(27, 31, 34, 0.85);
 	width: 50vw;
 	padding: 4rem;
-	border-radius: 10px;
+	border-radius: 4px;
 	justify-content: center;
 	input, textarea {
 		font-size: 2rem;
@@ -238,9 +257,10 @@ form {
 		color: #f3f3f3;
 		border: 1px solid #fff;
 		background-color: transparent;
-		border-radius: 2px;
+		border-radius: 3px;
 	}
 	label {
+		letter-spacing: 2px;
 		text-transform: uppercase;
 		font-size: 1.5rem;
 	}
@@ -265,10 +285,142 @@ form {
 }
 
 .btn {
+	font-size: 14px;
 	background-color: #fff;
 	color: #333;
 	text-transform: uppercase;
 	padding: 0.7rem 1.5rem;
 	border-radius: 3px;
-	font-weight: bold;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.social-links ul {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: baseline;
+	.fab {
+		margin-right: 3rem;
+		font-size: 3rem;
+		color: #dadada;
+	}
+	.fab:hover {
+		color: #fff;
+		text-shadow: 0 0 2px #fff;
+	}
+}
+
+.cancel-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	background-color: #fff;
+	width: 30px;
+	height: 3px;
+	z-index: 2;
+}
+.cancel-btn:before {
+	margin-right: 20px;
+	background-color: #fff;
+	top: 20px;
+	width: 10px;
+	height: 5px;
+}
+
+
+// ===================================================
+								// project page
+// ===================================================
+
+
+.project-sec-hdr {
+	text-shadow: 2px 2px 4px #000;
+	ul li a {
+		color: #fff;
+	}
+	ul li a:hover {
+		color: white;
+	}
+}
+
+.project-sec, .hobbies-sec {
+	display: grid;
+	background-color: #111;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(minmax(auto,1fr)(3, 1fr));
+	grid-gap: 2rem;
+	padding: 10rem;
+	align-items: center;
+	justify-content: center;
+	// perspective: 1000px;
+
+	img {
+		height: 30vh;
+		width: 30vw;
+		border-radius: 5px;
+		border: 1px solid rgba(255,255,255,0.25);
+		box-shadow: 0 0 0 2px rgba(207, 61, 203, 0.4);
+	}
+
+	img:hover {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transition: all 1.3s ease-in-out;
+		transform: rotateX(0deg) rotateX(0deg) rotateY(0deg) scaleX(1.3) scaleY(1.5);
+		// box-shadow: 0 0 0 2px rgba(207, 61, 203, 1);
+	}
+
+// 	.first-row:hover {
+// 		-webkit-transition: all 1s ease-in-out;
+// 		transform: translate(50%, 50%) scale(2);
+// 	}
+// 	.mid-row:hover {
+// 		-webkit-transition: all 1s ease-in-out;
+// 		transform: translate(0, 50%) scale(2.5);
+// 	}
+// 	.last-row:hover {
+// 		-webkit-transition: all 1s ease-in-out;
+// 		transform: translate(-50%, 50%) scale(2);
+// 	}
+
+// 	.bottom:hover {
+// 		transform: translate(50%, -50%) scale(2);
+// 	}
+// }
+
+// .items {
+// 	box-shadow: 0 0 6px 4px rgba(255,255,255, 0.2);
+// 	overflow: hidden;
+// 	border-radius: 5px;
+// 	img {
+// 		height: 100%;
+// 		width: 100%;
+// 		border-radius: 5px;
+// 	}
+// 	img:hover {
+// 		// height: 50%;
+// 		// width: 50%;
+// 		// position: absolute;
+// 		// top: 40%;
+// 		// left: 50%;
+// 		// transform: translate(-50%, -50%);
+// 		-webkit-transition: all 1s ease-in-out;
+// 		transform: scale(1.5);
+// 	}
+// }
+
+// .big-img-box {
+
+// }
+}
+
+// ===================================================
+								// hobbies page
+// ===================================================
+
+
+.hobbies-sec-hdr {
+
 }
