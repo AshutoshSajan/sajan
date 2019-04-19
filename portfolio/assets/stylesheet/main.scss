@@ -14,34 +14,6 @@
 	text-align: center;
 }
 
-// .primary-header {
-// 	display: grid;
-// 	width: 90%;
-// 	position: fixed;
-// 	bottom: 0;
-// 	left: 5%;
-// 	background-color: rgba(255, 255, 255, 0);
-
-// 	ul {
-// 		display: flex;
-// 		justify-content: space-around;
-// 		// padding: 2rem;
-// 		grid-template-rows: repeat(7, 1fr);
-// 	}
-// 	ul li a {
-// 		display: flex;
-// 		text-transform: capitalize;
-// 		padding: 3rem;
-// 		font-size: 3rem;
-// 		font-family: 'Yellowtail', cursive;
-// 		color: #000;
-// 	}
-
-// 	ul li a:hover {
-// 		color: #fff;
-// 	}
-// }
-
 .hero-content-box {
 	position: absolute;
 	top: 50%;
@@ -333,11 +305,11 @@ form {
 								// project page
 // ===================================================
 
-
+// .project-sec-header
 .project-sec-hdr {
 	text-shadow: 2px 2px 4px #000;
 	ul li a {
-		color: #fff;
+		color: dodgerblue;
 	}
 	ul li a:hover {
 		color: white;
@@ -364,59 +336,12 @@ form {
 	}
 
 	img:hover {
-		// top: 50%;
-		// left: 50%;
-		// transform: translate(-50%, -50%);
-		-webkit-transition: all 1.3s ease-in-out;
-		transform: rotateX(-5deg) rotateZ(-360deg) rotateY(8deg) scaleX(1.3) scaleY(1.5);
-		// box-shadow: 0 0 0 2px rgba(207, 61, 203, 1);
+		-webkit-transition: all 400ms ease-in-out;
+		transform: scaleX(1.2) scaleY(1.4);
+		box-shadow: 0 0 0 2px rgba(207, 61, 203, 1);
 	}
-
-// 	.first-row:hover {
-// 		-webkit-transition: all 1s ease-in-out;
-// 		transform: translate(50%, 50%) scale(2);
-// 	}
-// 	.mid-row:hover {
-// 		-webkit-transition: all 1s ease-in-out;
-// 		transform: translate(0, 50%) scale(2.5);
-// 	}
-// 	.last-row:hover {
-// 		-webkit-transition: all 1s ease-in-out;
-// 		transform: translate(-50%, 50%) scale(2);
-// 	}
-
-// 	.bottom:hover {
-// 		transform: translate(50%, -50%) scale(2);
-// 	}
-// }
-
-// .items {
-// 	box-shadow: 0 0 6px 4px rgba(255,255,255, 0.2);
-// 	overflow: hidden;
-// 	border-radius: 5px;
-// 	img {
-// 		height: 100%;
-// 		width: 100%;
-// 		border-radius: 5px;
-// 	}
-// 	img:hover {
-// 		// height: 50%;
-// 		// width: 50%;
-// 		// position: absolute;
-// 		// top: 40%;
-// 		// left: 50%;
-// 		// transform: translate(-50%, -50%);
-// 		-webkit-transition: all 1s ease-in-out;
-// 		transform: scale(1.5);
-// 	}
-// }
-
-// .big-img-box {
-
-// }
 }
 
 // ===================================================
 								// hobbies page
 // ===================================================
-
